@@ -3,29 +3,84 @@
   <head>
     <title>Static Comp</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   </head>
   <body>
     <main>
-        <section class="left-nav">
-            <div class="profile-box"></div>
-            <div class="main-links"></div>
-            <div class="admin-links"></div>
-            <div class="categories-links"></div>
-        </section>
-        <section class="top-container">
-            <div class="search-box"></div>
-            <div class="header-box"></div>
-        </section>
-        <section class="">
-            <article>
+      <section class="left-nav" id="left-nav">
+        <div class="profile-box">
+          <img src="/Users/ianmcintosh/staticComp/img/me.jpg" alt="profile photo" class="profile-img">
+          <p class="user-title">Ian McIntosh</p>
+          <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        </div>
+        <div class="main-links">
+          <h6>Main</h6>
+          <a href="index.html"><i class="fa fa-house"></i> HOME</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-briefcase"></i> JOBS</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-file"></i> RESUMES</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-list"></i> TASKS</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-calendar-days"></i> CALENDAR</a>
+        </div>
+        <div class="admin-links">
+          <h6>Admin</h6>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-user-group"></i> USERS</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-location-dot"></i> LOCATIONS</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-chart-gantt"></i> WORKFLOWS</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-person-chalkboard"></i> JOB BOARDS</a>
+          <a href="index.html"><i class="fa-sharp fa-solid fa-users"></i> SOCIAL</a>
+        </div>
+        <div class="categories-links">
+          <h6>Categories</h6>
+          <form action="/action_page.php">
+            <input type="checkbox" class="admin" name="admin" value="Administrative">
+            <label for="admin"> Administrative</label><br>
+            <input type="checkbox" class="design" name="design" value="Design">
+            <label for="design"> Design</label><br>
+            <input type="checkbox" class="exec" name="exec" value="Executive">
+            <label for="exec"> Executive</label><br>
+            <input type="checkbox" class="hr" name="hr" value="Human Resources">
+            <label for="hr"> Human Resources</label><br><br>
+          </form>
+        </div>
+      </section>
+      <section class="top-container">
+        <div class="search-container">
+          <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <form action="/action_page.php" class="search-form">
+            <input type="text" placeholder="Search for a job, task, or resume" name="search" class="search-input">
+            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="search-btn2">
+          <a href="#home"><i class="fa-sharp fa-solid fa-user-plus"></i></a>
+          <a href="#about"><i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+          <a href="#contact"><i class="fa-sharp fa-solid fa-grip"></i></a>
+        </div>
+      </section>
+      <section class="header-container">
+        <div class="header-box">
+          <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+          <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+          <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+          <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+          <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <img class="mid-img">
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <article>
 
-            </article>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
+        </article>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
     </main>
   </body>
+  <script src="https://kit.fontawesome.com/52837026cf.js" crossorigin="anonymous"></script>
 </html>
 
