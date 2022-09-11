@@ -3,7 +3,7 @@
 
 /* --------------------------------------------- TAGS */
 body {
-    background-color: aliceblue;
+    background-color: #FFFFFF;
     font-family: "Poppins", sans-serif;
 }
 
@@ -21,14 +21,15 @@ a {
     margin-left: 20px;
 }
 
-h6 {
+h5 {
     margin-left: 20px;
+    margin-bottom: 0px;
 }
 
 /* --------------------------------------------- LEFT NAV */
 .left-nav {
     background-color: #354052;
-    width: 10%;
+    width: 13%;
     height: 100%;
     color: #949CAF;
     display: flex;
@@ -63,9 +64,10 @@ h6 {
     align-items: flex-start;
     gap: 10px;
     padding-bottom: 20px;
+    font-size: 12px;
 }
 .categories-links {
-    font-size: 13px;
+    font-size: 10px;
 }
 
 /* --------------------------------------------- TOP CONTAINER*/
@@ -75,15 +77,15 @@ h6 {
     height: 100%;
     color: #949CAF;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     align-items: stretch;
 }
 
 .search-container { 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-start;
 }
 .search-form {
@@ -91,7 +93,7 @@ h6 {
 }
 
 .search-input {
-    width: 600px;
+    width: 93%;
     height: 35px;
     margin-top: 23px;
 }
@@ -99,7 +101,6 @@ h6 {
 .search-btn {
     height: 39px;
     width: 40px;
-    margin-left: -50px;
     background-color: #FFFFFF;
     border: 1px 1px 1px 0px #000000;
     border-style: hidden;
@@ -107,10 +108,75 @@ h6 {
 
 .search-btn2 {
     display: flex;
-    margin: 30px 0px 0px -200px;
+    align-self: flex-start;
+    margin: 32px 0px 0px 10px;
 }
 
+/* --------------------------------------------- HEADER CONTAINER*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
 
+.job-title {
+    margin-left: 25px;
+}
+
+.job-location {
+    margin: -19px 0px 0px 25px;
+    font-size: 12px;
+}
+
+.preview {
+    margin: 0px 0px 0px 0px;
+    color: #0786bc;
+}
+
+.side-btns {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -10px 0px 0px 0px;
+    border: none;
+    border-radius: 50%;
+}
+
+.tablink {
+    background-color: #FFFFFF;
+    color: #949CAF;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 13px;
+    width: 13%;
+}
+
+.tablink:hover {
+    border-bottom: 10px;
+    border-color: #0786bc;
+    border-style: solid;
+}
+
+.tabcontent {
+    display: flex;
+    background-color: aliceblue;
+    height: 300px;
+    width: 90%;
+}
+
+.chart1,
+.chart2,
+.chart3 {
+    height: 100px;
+    width: 200px;
+    align-self: center;
+}
+
+.chart4 {
+    height: 200px;
+    width: 400px;
+}
 
 
 
