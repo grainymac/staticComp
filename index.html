@@ -4,6 +4,7 @@
     <title>Static Comp</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/your/charts.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   </head>
   <body>
@@ -15,7 +16,7 @@
           <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
         </div>
         <div class="main-links">
-          <h6>Main</h6>
+          <h5>Main</h5>
           <a href="index.html"><i class="fa fa-house"></i> HOME</a>
           <a href="index.html"><i class="fa-sharp fa-solid fa-briefcase"></i> JOBS</a>
           <a href="index.html"><i class="fa-sharp fa-solid fa-file"></i> RESUMES</a>
@@ -23,7 +24,7 @@
           <a href="index.html"><i class="fa-sharp fa-solid fa-calendar-days"></i> CALENDAR</a>
         </div>
         <div class="admin-links">
-          <h6>Admin</h6>
+          <h5>Admin</h5>
           <a href="index.html"><i class="fa-sharp fa-solid fa-user-group"></i> USERS</a>
           <a href="index.html"><i class="fa-sharp fa-solid fa-location-dot"></i> LOCATIONS</a>
           <a href="index.html"><i class="fa-sharp fa-solid fa-chart-gantt"></i> WORKFLOWS</a>
@@ -31,7 +32,7 @@
           <a href="index.html"><i class="fa-sharp fa-solid fa-users"></i> SOCIAL</a>
         </div>
         <div class="categories-links">
-          <h6>Categories</h6>
+          <h5>Categories</h5>
           <form action="/action_page.php">
             <input type="checkbox" class="admin" name="admin" value="Administrative">
             <label for="admin"> Administrative</label><br>
@@ -51,24 +52,31 @@
             <input type="text" placeholder="Search for a job, task, or resume" name="search" class="search-input">
             <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
           </form>
+          <a href="#home" class="search-btn2"><i class="fa-sharp fa-solid fa-user-plus"></i></a>
+          <a href="#about" class="search-btn2"><i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+          <a href="#contact" class="search-btn2"><i class="fa-sharp fa-solid fa-grip"></i></a>
         </div>
-        <div class="search-btn2">
-          <a href="#home"><i class="fa-sharp fa-solid fa-user-plus"></i></a>
-          <a href="#about"><i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
-          <a href="#contact"><i class="fa-sharp fa-solid fa-grip"></i></a>
-        </div>
-      </section>
-      <section class="header-container">
         <div class="header-box">
-          <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-          <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-          <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-          <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-          <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <img class="mid-img">
-          </div>
+          <h3 class="job-title">Customer Service Representative</h3>
+          <p class="job-location">Fort Worth, TX &bull; <a href="" class="preview">Preview this post</a></p>
+            <aside class="side-btns">
+              <button><i class="fa-sharp fa-solid fa-trash"></i></button>
+              <button><i class="fa-sharp fa-solid fa-pen"></i></button>
+              <button><i class="fa-sharp fa-solid fa-bookmark"></i></button>
+              <button>&#x25A0 OPEN</button>
+            </aside>
+          <button class="tablink" onclick="openPage('Home', this, 'red')">SUMMARY</button>
+          <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">APPLICATIONS</button>
+          <button class="tablink" onclick="openPage('Contact', this, 'blue')">JOB BOARD</button>
+          <button class="tablink" onclick="openPage('About', this, 'orange')">INTERVIEWS</button>
+          <button class="tablink" onclick="openPage('About', this, 'orange')">ACTVITY</button>
+          <button class="tablink" onclick="openPage('About', this, 'orange')">BROADCAST</button>
+          <button class="tablink" onclick="openPage('About', this, 'orange')">NOTIFICATIONS</button>
         </div>
+        <div id="Home" class="tabcontent">
+          <img class="mid-img">
+          <img class="mid-img">
+          <img class="mid-img">
       </section>
       <section class="">
         <article>
