@@ -165,6 +165,19 @@ h5 {
     width: 90%;
 }
 
+.chart1,
+.chart2,
+.chart3 {
+    height: 100px;
+    width: 200px;
+    align-self: center;
+}
+
+.chart4 {
+    height: 200px;
+    width: 400px;
+}
+
 
 
 
